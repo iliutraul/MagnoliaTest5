@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Robito',sans-serif;
+
+}
+
+
+
+body{
+    background-color:#f2f2f2;
+    margin-top: 150px;
+
+}
+.heading{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+font-size: 50px;
+color: black;
+margin-bottom: 25px;
+position: relative;
+
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100hv;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+
+}
+.maringeDreapta{
+   
+    overflow: hidden ;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    transition: 0.5s ease;
+    justify-content: space-between;
+  
+}
+.margineDreapta img{
+    width: 400px;
+    height: 400px;
+    height: auto;
+    display: black;
+    transition: 0.5s ease;
+}
+.margineDreapta:hover {
+    transform: scale(1.2);
+}
+
+.heading p{
+    font-size:18px ;
+    color: black;
+    margin-bottom: 35px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 20px;
+     margin-right: 50px;
+    margin-left: 45px;
+    text-align: center;
+}
+.teren{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-wrap: wrap;
+}
+.teren-image{
+    flex: 1;
+    overflow: hidden ;
+    align-items: left;
+  
+}
+.teren-image img{
+    width: 400px;
+    height: 400px;
+    height: auto;
+    display: black;
+    transition: 0.5s ease;
+}
+.teren-image:hover img{
+    transform: scale(1.2);
+}
+.content{
+   flex: 2;
+   text-align: left;
+   margin-left: 50px;;
+}
+.content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-top: 50px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" type="text/css" href="CSS-LogIN(proiect).css">
+  <link rel="stylesheet" href="../Navigation Bar/NavigationBarCSS.css">
+</head>
+<body>
+  <script type="module">
+    import { registerUser } from './firebaseAuth.js';
+    window.registerUser = registerUser;
+  </script>
+  
+  <div id="Navigatia"></div>
+  <script src="../Navigation Bar/NaviJava.Js"></script>
+  
+  <div class="register-page">
+      <div class="form">
+        <form class="register-form" id="register-form">
+          <input type="text" placeholder="name" id="name"/>
+          <input type="password" placeholder="password" id="password"/>
+          <input type="text" placeholder="email address" id="email"/>
+          <input type="text" placeholder="phone number" id="phone"/>
+          <button type="button" onclick="registerUser()">Create</button>
+          <p class="message">Already registered? <a href="./HTML-LogIn.html">Sign In</a></p>
+        </form>
+      </div>
+    </div>
+   
+</body>
+</html>

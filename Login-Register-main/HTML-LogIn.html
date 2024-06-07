@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log-in</title>
+  <link rel="stylesheet" type="text/css" href="CSS-LogIN(proiect).css">
+  <link rel="stylesheet" href="../Navigation Bar/NavigationBarCSS.css">
+</head>
+<body>
+  <div id="Navigatia"></div>
+  <script src="../Navigation Bar/NaviJava.Js"></script>
+
+  <div class="login-page">
+    <div class="form">
+      <form class="login-form" id="login-form">
+        <input type="text" placeholder="e-mail" id="email"/>
+        <input type="password" placeholder="password" id="password"/>
+        <button type="button" onclick="loginUser()">Login</button>
+        <p class="message">Not registered? <a href="./HML-Register.html">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="firebaseLogin.js"></script>
+</body>
+</html>

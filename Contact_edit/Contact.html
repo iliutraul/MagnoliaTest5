@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="ro"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Contactează-ne</title> 
+  <link rel="stylesheet" type="text/css" href="ContactCSS.css" >
+  <link rel="stylesheet"  href="../Navigation Bar/NavigationBarCSS.css" >
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js" type="module"></script>
+
+</head>
+
+<body>
+
+    <div id="Navigatia"></div>
+    <script src="../Navigation Bar/NaviJava.Js"></script>
+<div class="centralizata">
+    <section class="contact" style="background-image: url('gol.jpg');"> 
+        <div class="container">
+            <h2>Contactează-ne</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Ai întrebări?</h3> 
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Numele tău">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Emailul tău">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Mesajul tău"></textarea> 
+                        </div>
+                        <button type="submit">Trimite</button> 
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Informații de contact</h3> 
+                    <p><i class="fas fa-phone"></i> 0722 648 793</p>
+                    <p><i class="fas fa-envelope"></i> office@magnoliasport.ro</p>                
+                    <p><i class="fas fa-map-marker-alt"></i>  Strada Principală FN, Șura Mare 557265</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="ContatctFirebase.js"type="module"></script>
+ 
+</body>
+</html>

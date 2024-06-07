@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+}
+body {
+    margin-top: 70px;
+    background-image:url('./Fundal3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Asigură că imaginea de fundal se potrivește întotdeauna */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Poziționare relativă pentru a poziționa butoanele în cadrul body-ului */
+}
+#calendar {
+    width: 50%; /* Lățimea calendarului */
+    
+    margin-left: -10%; /* Centrare pe orizontală */
+    background-color: rgb(255, 255, 255); /* Fundal alb */
+    border-radius: 10px; /* Margini rotunjite */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Umbra */
+}
+#reservation-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.buton {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: rgb(5, 133, 16);
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+    text-align: center;
+ 
+}
+
+.buton:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+.buton:hover:not(:disabled) {
+    background: rgb(5, 133, 16);
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.buton:disabled {
+    cursor: auto;
+    color: grey;
+}
+.animate {
+    position: absolute;
+    left: 0;
+}
+
+.button:nth-child(1).animate {
+    top: 20%;
+}
+
+.button:nth-child(2).animate {
+    top: 40%;
+}
+
+.button:nth-child(3).animate {
+    top: 60%;
+}
